@@ -417,24 +417,67 @@ void get_time () {
             for (int k = 0; k < 60; ++k) {
                 system("cls"); // 苍老师清屏
                 printf("%02d : %02d : %02d \n", i, j, k);
-                Sleep(960);  // 相当于python的time.sleep
+                Sleep(960);  // 相当于python的time.sleep()
             }
         }
     }
 }
 
+void new_func_15 () {
+    // 九九乘法表
+    for (int i = 1; i <= 9; ++i) {
+        for (int j = 1; j <= i; ++j) {
+            printf("%d*%d=%d \t", j, i, i*j);
+        }
+        printf("\n");
+    }
+}
+
+void new_func_16 () {
+    printf("FUCK YOU 1 !!! \n");
+    printf("FUCK YOU 2 !!! \n");
+    goto FLAG;
+    printf("FUCK YOU 3 !!! \n");
+    printf("FUCK YOU 4 !!! \n");
+    FLAG:
+    printf("FUCK YOU 5 !!! \n");
+    printf("FUCK YOU 6 !!! \n");
+}
+
+void new_func_17 () {
+    // 循环之间的跳转,尽量不要在函数中跳转,因为是基于模块法开发
+    int i = 0, j= 0;
+
+    for (i = 0; i < 10; ++i) {
+        if (i == 5) {
+            goto FLAG;
+        }
+        printf("i=%d \n", i);
+    }
+    for (j = 0; j < 10; ++j) {
+        FLAG:
+        printf("j=%d \n", j);
+    }
+}
+
+void new_func_18 () {
+    // 比较高级的死循环
+    FLAG:
+        printf("hello world !!! \n");
+    goto FLAG;
+}
 
 /*
-new_func_09
-new_func_10
-new_func_11
-new_func_12
-new_func_13
-new_func_14
-new_func_15
-new_func_16
-new_func_17
-new_func_18
 new_func_19
 new_func_20
+new_func_21
+new_func_22
+new_func_23
+new_func_24
+new_func_25
+new_func_26
+new_func_27
+new_func_28
+new_func_29
+new_func_30
 */
