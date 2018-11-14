@@ -59,7 +59,10 @@ int main() {
 //    new_func_06();
 //    new_func_07();
 //    new_func_08();
-    new_func_09();
+//    new_func_09();
+//    new_func_10();
+//    new_func_11();
+    new_func_12();
     return 0;
 }
 

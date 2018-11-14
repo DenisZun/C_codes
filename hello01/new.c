@@ -249,6 +249,128 @@ void new_func_10 () {
     }
 }
 
+void new_func_11 () {
+
+// 1.打印直角三角形
+//    for (int i = 1; i <= 10; ++i) {
+//        for (int j = 1; j <= i; ++j) {
+//            printf("*");
+//        }
+//        printf("\n");
+//    }
+
+// 2.打印到三角形
+// 外圈控制行数
+// 内圈控制星花数
+//    for (int i = 1; i <= 10; ++i) {
+//        for (int j = 1; j <= 10 - i; ++j) {
+//            printf("*");
+//        }
+//        printf("\n");
+//    }
+
+
+// 3.打印等腰三角形(头朝上)
+//    for (int i = 1; i <= 10 ; ++i) {
+//        for (int j = 1; j <= 10 -i ; ++j) {
+//            printf(" ");
+//        }
+//        for (int k = 1; k <= 2*i- 1 ; ++k) {
+//            printf("*");
+//        }
+//        printf("\n");
+//    }
+
+
+// 4.打印等腰三角形(头朝下)
+//    for (int i = 1; i <= 10 ; ++i) {
+//        for (int j = 1; j <= i-1; ++j) {
+//            printf(" ");
+//        }
+//        for (int k = 1; k <= 2*10 - 2*i +1; ++k) {
+//            printf("*");
+//        }
+//        printf("\n");
+//    }
+
+// 5.打印矩形
+//    for (int i = 1; i < 10; ++i) {
+//        for (int j = 1; j < 10; ++j) {
+//            printf("*");
+//        }
+//        printf("\n");
+//    }
+
+
+// 6.打印平行四边形
+//    for (int i = 1; i < 10; ++i) {
+//        for (int k = 1; k < 10-i; ++k) {
+//            printf(" ");
+//        }
+//        for (int j = 1; j < 10; ++j) {
+//            printf("*");
+//        }
+//        printf("\n");
+//    }
+}
+
+void new_func_12() {
+//    int line = 0;  //上半部分行数
+//    int i = 0;
+//    int j = 0;
+//    int n = 0;
+//    scanf("%d", &line);
+//    for (i = 0; i < line; i++)
+//    {
+//        for (n = 0; n < line - 1 - i; n++)
+//        {
+//            printf(" ");
+//        }
+//        for (j = 0; j < 2 * i+1; j++)
+//        {
+//            printf("*");
+//        }
+//        printf("\n");
+//    }
+//    for (i = 0; i < line - 1; i++)
+//    {
+//        for (n = 0; n < i + 1; n++)
+//        {
+//            printf(" ");
+//        }
+//        for (j = 0; j < 2 * (line - 1 - i) - 1; j++)
+//        {
+//            printf("*");
+//        }
+//        printf("\n");
+//    }
+
+    int num;
+    printf("请选择行数: \n");
+    scanf("%d", &num);
+
+    for (int i = 0; i <= num; ++i) {
+        for (int j = 0; j <= num - i; ++j) {
+            printf(" ");
+        }
+        for (int k = 0; k < 2*i -1; ++k) {
+            printf("*");
+        }
+        printf("\n");
+    }
+
+    for (int i = 0; i <= num -1; ++i) {
+        for (int j = 0; j <= i+1; ++j) {
+            printf(" ");
+        }
+        for (int k = 0; k < 2*(num - i -1) -1; ++k) {
+            printf("*");
+        }
+        printf("\n");
+    }
+}
+
+
 /*
 new_func_09
 new_func_10
