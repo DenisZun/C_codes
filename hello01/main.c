@@ -62,7 +62,10 @@ int main() {
 //    new_func_09();
 //    new_func_10();
 //    new_func_11();
-    new_func_12();
+//    new_func_12();
+//    new_func_13();
+//    new_func_14();
+    get_time();
     return 0;
 }
 

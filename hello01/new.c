@@ -2,6 +2,7 @@
 #include <time.h>
 #include <math.h>
 #include <stdlib.h>
+#include <windows.h>
 
 void new_func () {
     int a, b;
@@ -367,6 +368,58 @@ void new_func_12() {
             printf("*");
         }
         printf("\n");
+    }
+}
+
+void new_func_13 () {
+    int num1 = 0;
+    int num2 = 0;
+    for (int i = 1; i <= 100 ; ++i) {
+
+        if (i % 2 != 0)
+            num1 += -i;
+        else
+            num2 += i;
+
+//        if (i % 2 != 0) {
+//            int a = -1 * i;
+//            printf("%d \n", a);
+//        }
+//        else {
+//            int b = i;
+//            printf("%d \n", b);
+//        }
+//        c += i;  // 求前十项和
+    }
+    printf("num1:%d \n", num1);
+    printf("num2:%d \n", num2);
+    int sum = num1 + num2;
+    printf("和为:%d", sum);
+//    printf("c:%d \n", c);
+}
+
+void new_func_14 () {
+    for (int i = 1; i < 10; ++i) {
+        for (int j = 0; j < 10; ++j) {
+            for (int k = 0; k < 10; ++k) {
+                if (i!=j && i!=k && j!=k) {
+                    printf("%d%d%d \n", i, j, k);
+                }
+            }
+        }
+    }
+}
+
+void get_time () {
+    // 时钟计时器
+    for (int i = 0; i <= 24; ++i) {
+        for (int j = 0; j < 60; ++j) {
+            for (int k = 0; k < 60; ++k) {
+                system("cls"); // 苍老师清屏
+                printf("%02d : %02d : %02d \n", i, j, k);
+                Sleep(960);  // 相当于python的time.sleep
+            }
+        }
     }
 }
 
